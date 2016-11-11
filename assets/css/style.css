@@ -7,7 +7,7 @@
 
 header{
 	background: #4aaaa5;
-	width: 20%;
+	min-width: 20%;
 	align-content: center;
 	text-align: center;
 	padding: 15px;
@@ -50,6 +50,10 @@ h4{
 p{
 	font-size: 16px;
 	line-height: 20px;
+}
+
+a{
+	text-decoration: none;
 }
 
 input{
@@ -97,10 +101,9 @@ input{
 
 #maincontent{
 	clear: both;
+	display:inline-block;
 	width: 100%;
-	height: 850px;
 	margin: 0 auto;
-	position: relative;
 	background-image: url("../images/dark_embroidery.png");
 	border-style: solid;
 	border-top-color: #dddddd;
@@ -118,15 +121,11 @@ input{
 	border-color: #dddddd;
 	border-style: solid;
 	border-width: 5px;
-	width: 650px;
-	height: 750px;
+	max-width: 650px;
 	padding: 20px;
-	margin:50px; 
+	margin:75px; 
 	align-content: center;
-	position: absolute;
-	top: 0px;
-	left: 100px;
-	
+	float: left;
 
 }
 
@@ -219,14 +218,12 @@ input{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	width: 270px;
 	padding: 20px;
-	margin: 50px;
+	margin: 75px;
 	background-color: #ffffff;
 	border-color: #dddddd;
 	border-style: solid;
 	border-width: 5px;
-	position: absolute;
-	top: 0px;
-	right: 100px;
+	float: left;
 	
 
 }
@@ -235,7 +232,7 @@ input{
 #message{
 	
 	width: 99%;
-	height: 400px;
+	height: 200px;
 	margin: 5px;
 	border-width: 2px;
 	border-color: #dddddd;
@@ -265,5 +262,90 @@ input{
 	align-content: center;
 	text-align: center;
 	
+
+}
+
+@media (max-width: 980px) {
+   #main-body{width: 60%;}
+   #connect{width: 40%}
+   #myimage{ 
+   	width: 450px; 
+   	height: 450px;
+   	float: left;
+   }
+   p{float: left;}
+}
+
+@media (max-width: 768px) {
+
+  #main-body{width: 90%;}
+  #connect{width: 90%;}
+ 	#myimage{ 
+   	width: 200px; 
+   	height: 200px;
+   	float: left;
+   }
+
+   p{float: left;}
+}
+
+@media (max-width: 640px) {
+
+  header{
+  	position:static;
+  }
+
+  #main-content{
+  	align-content: center;
+  	display: inline-block;
+  	margin: 0 auto;
+  }
+
+  #main-body{
+  	width: 100%;
+  	display: inline-block;
+  	align-content: center;
+  	margin: 5px;
+  	padding: 5px;
+  }
+
+  #connect{
+  	width: 100%;
+  	display: inline-block;
+  	align-content: center;
+  	margin: 5px;
+  	padding: 5px;
+  }
+
+   #myimage{ 
+   	width: 450px; 
+   	height: 450px;
+   	float: left;
+   }
+
+   p{ 
+   	float: left; 
+   }
+
+   header{
+   	width: 100%;
+   	float:left;
+   	margin: 0 auto;
+   }
+
+   #navbar{
+   	width: 100%;
+   	float: left;
+   	}
+
+   	#navbar li{
+   		width: 30%;
+   		border-left: 
+   	}
+
+   	#navbar li a{
+   		font-size: 20px;
+   		padding-bottom: 25px;
+   	}
 
 }
