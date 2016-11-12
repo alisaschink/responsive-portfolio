@@ -292,13 +292,16 @@ input{
    	width: 70%;
    	float: left;
    	margin: 10px;
+    padding: 5px;
    }
 
    #connect{
-   	width: 300%;
+   	width: 30%;
    	float: left;
    	margin: 10px;
+    padding: 5px;
    }
+
    #myimage{ 
    	width: 450px; 
    	height: 450px;

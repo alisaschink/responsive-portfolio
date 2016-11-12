@@ -275,13 +275,13 @@ input{
   }
 
    #main-body{
-   	width: 50%;
+   	width: 70%;
    	float: left;
    	margin: 10px;
    }
 
    #connect{
-   	width: 50%;
+   	width: 30%;
    	float: left;
    	margin: 10px;
    }
