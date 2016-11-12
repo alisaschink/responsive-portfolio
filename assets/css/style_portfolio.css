@@ -1,3 +1,4 @@
+
 *{
 	color: #777777;
 	box-sizing: border-box;
@@ -6,7 +7,7 @@
 
 header{
 	background: #4aaaa5;
-	min-width: 20%;
+	width: 20%;
 	align-content: center;
 	text-align: center;
 	padding: 15px;
@@ -51,10 +52,6 @@ p{
 	line-height: 20px;
 }
 
-a{
-	text-decoration: none;
-}
-
 input{
 	background-color: #ffffff;
 	border-color: #dddddd;
@@ -80,13 +77,13 @@ input{
 	text-align: center;
 	padding-top: 25px;
 	list-style: none;
-}
 
+
+}
 
 #navbar li{
 	float: left;
 }
-
 
 #navbar li a{
 	display: inline-block;
@@ -96,11 +93,14 @@ input{
 	font-size: 17px;
 }
 
+
+
 #maincontent{
 	clear: both;
-	display:inline-block;
 	width: 100%;
+	height: 850px;
 	margin: 0 auto;
+	position: relative;
 	background-image: url("../images/dark_embroidery.png");
 	border-style: solid;
 	border-top-color: #dddddd;
@@ -118,11 +118,15 @@ input{
 	border-color: #dddddd;
 	border-style: solid;
 	border-width: 5px;
-	max-width: 650px;
+	width: 650px;
+	height: 750px;
 	padding: 20px;
-	margin:75px; 
+	margin:50px; 
 	align-content: center;
-	float: left;
+	position: absolute;
+	top: 0px;
+	left: 75px;
+	
 
 }
 
@@ -215,19 +219,23 @@ input{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	width: 270px;
 	padding: 20px;
-	margin: 75px;
+	margin: 50px;
 	background-color: #ffffff;
 	border-color: #dddddd;
 	border-style: solid;
 	border-width: 5px;
-	float: left;
+	position: absolute;
+	top: 0px;
+	right: 75px;
+	
+
 }
 
 
 #message{
 	
 	width: 99%;
-	height: 200px;
+	height: 400px;
 	margin: 5px;
 	border-width: 2px;
 	border-color: #dddddd;
@@ -264,7 +272,13 @@ input{
     
    header{
 		margin-left:75px;
-		margin-right: 350px;
+		margin-right: 250px;
+    width: 20%;
+    float: left;
+  }
+
+  #navbar{
+    float: left;
   }
 
    #main-content{
@@ -275,13 +289,13 @@ input{
   }
 
    #main-body{
-   	width: 50%;
+   	width: 70%;
    	float: left;
    	margin: 10px;
    }
 
    #connect{
-   	width: 50%;
+   	width: 300%;
    	float: left;
    	margin: 10px;
    }
@@ -308,7 +322,6 @@ input{
    }
 
    p{
-   	/*display: inline;*/
    	float: left;
    }
 
@@ -354,6 +367,7 @@ input{
   	align-content: center;
   	margin: 5px;
   	padding: 5px;
+  	float: left;
   }
 
   #connect{
@@ -362,6 +376,7 @@ input{
   	align-content: center;
   	margin: 5px;
   	padding: 5px;
+  	float: left;
   }
 
    #myimage{ 
@@ -396,3 +411,141 @@ input{
    	}
 
 }
+
+/*@media (max-width: 980px) {
+    
+   header{
+		margin-left:75px;
+		margin-right: 350px;
+  }
+
+   #main-content{
+   	width: 100%;
+  	align-content: center;
+  	display: inline-block;
+  	margin: 0 auto;
+  }
+
+   #main-body{
+   	width: 70%;
+   	float: left;
+   	margin: 10px;
+   }
+
+   #connect{
+   	width: 300%;
+   	float: left;
+   	margin: 10px;
+   }
+   #myimage{ 
+   	width: 450px; 
+   	height: 450px;
+   	float: left;
+   }
+   p{float: left;}
+}
+
+@media (max-width: 768px) {
+
+  header{
+		margin-left:10px;
+		margin-right: 250px;
+  }
+
+ 	#myimage{ 
+   	width: 200px; 
+   	height: 200px;
+   	margin: 5px;
+   	float: left;
+   }
+
+   p{
+   	float: left;
+   }
+
+   #main-content{
+  	align-content: center;
+  	display: inline-block;
+  	margin: 0 auto;
+  }
+
+  #main-body{
+  	width: 100%;
+  	display: inline-block;
+  	align-content: center;
+  	margin: 10px;
+  	padding: 10px;
+  }
+
+  #connect{
+  	width: 100%;
+  	display: inline-block;
+  	align-content: center;
+  	margin: 10px;
+  	padding: 10px;
+  }
+
+}*/
+
+/*@media (max-width: 640px) {
+
+  header{
+  	position:static;
+  }
+
+  #main-content{
+  	align-content: center;
+  	display: inline-block;
+  	margin: 0 auto;
+  }
+
+  #main-body{
+  	width: 100%;
+  	display: inline-block;
+  	align-content: center;
+  	margin: 5px;
+  	padding: 5px;
+  	float: left;
+  }
+
+  #connect{
+  	width: 100%;
+  	display: inline-block;
+  	align-content: center;
+  	margin: 5px;
+  	padding: 5px;
+  	float: left;
+  }
+
+   #myimage{ 
+   	width: 450px; 
+   	height: 450px;
+   	float: left;
+   }
+
+   p{ 
+   	float: left; 
+   }
+
+   header{
+   	width: 100%;
+   	float:left;
+   	margin: 0 auto;
+   }
+
+   #navbar{
+   	width: 100%;
+   	float: left;
+   	}
+
+   	#navbar li{
+   		width: 30%;
+   		border-left: 
+   	}
+
+   	#navbar li a{
+   		font-size: 20px;
+   		padding-bottom: 25px;
+   	}
+
+}*/
